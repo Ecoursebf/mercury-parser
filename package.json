@@ -58,7 +58,8 @@
   "jsdom": "^22.1.0",
   "node-fetch": "^2.6.1",
   "entities": "^4.5.0",
-  "turndown": "^7.1.1"
+  "turndown": "^7.1.1",
+  "postman-request": "^2.88.1-postman.33"
 },
   "engines": {
     "node": ">=10"
