@@ -65,7 +65,8 @@
 "moment-parseformat": "^4.0.0",
 "wuzzy": "^0.1.4",
 "difflib": "0.2.4",
-"ellipsize": "^0.5.1"
+"ellipsize": "^0.5.1",
+"yargs-parser": "^21.1.1"
 
 },
   "engines": {
