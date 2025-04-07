@@ -163,6 +163,4 @@
     ]
   }
 }
-"scripts": {
-  "build": "npm install --legacy-peer-deps && npm audit fix && npm run build-your-app"
-}
+
