@@ -62,7 +62,9 @@
   "postman-request": "^2.88.1-postman.33",
    "valid-url": "^1.0.9",
 "moment-timezone": "^0.5.40",
-"moment-parseformat": "^4.0.0"
+"moment-parseformat": "^4.0.0",
+"wuzzy": "^0.1.4"
+
 },
   "engines": {
     "node": ">=10"
