@@ -60,7 +60,7 @@
   "entities": "^4.5.0",
   "turndown": "^7.1.1",
   "postman-request": "^2.88.1-postman.33",
-"string-direction": "^1.0.3"
+"string-direction": "1.0.0"
 },
   "engines": {
     "node": ">=10"
