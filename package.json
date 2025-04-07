@@ -53,12 +53,13 @@
     "generate-parser": "node ./dist/generate-custom-parser.js"
   },
   "dependencies": {
-    "@babel/runtime-corejs2": "^7.0.0",
-    "cheerio": "^1.0.0-rc.12",
-    "jsdom": "^22.1.0",
-    "node-fetch": "^2.6.1",
-    "entities": "^4.5.0"
-  },
+  "@babel/runtime-corejs2": "^7.0.0",
+  "cheerio": "^1.0.0-rc.12",
+  "jsdom": "^22.1.0",
+  "node-fetch": "^2.6.1",
+  "entities": "^4.5.0",
+  "turndown": "^7.1.1"
+},
   "engines": {
     "node": ">=10"
   }
