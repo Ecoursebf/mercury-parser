@@ -60,7 +60,7 @@
   "entities": "^4.5.0",
   "turndown": "^7.1.1",
   "postman-request": "^2.88.1-postman.33",
-   "valid-url": "^1.0.9"
+   "valid-url": "^1.0.9",
 "moment-timezone": "^0.5.40"
 },
   "engines": {
