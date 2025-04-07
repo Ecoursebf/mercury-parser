@@ -66,8 +66,8 @@
 "wuzzy": "^0.1.4",
 "difflib": "0.2.4",
 "ellipsize": "^0.5.1",
-"yargs-parser": "^21.1.1"
-
+"yargs-parser": "^21.1.1",
+"express": "^5.1.0"
 },
   "engines": {
     "node": ">=10"
