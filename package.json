@@ -1,0 +1,57 @@
+{
+  "name": "@postlight/parser",
+  "version": "2.2.3",
+  "description": "Postlight Parser transforms web pages into clean text. Publishers and programmers use it to make the web make sense, and readers use it to read any web article comfortably.",
+  "author": "Postlight <mercury@postlight.com>",
+  "homepage": "https://reader.postlight.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/postlight/parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/postlight/parser/issues"
+  },
+  "keywords": [
+    "mercury",
+    "parser",
+    "reader",
+    "web",
+    "content"
+  ],
+  "files": [
+    "dist",
+    "cli.js",
+    "src/shims/"
+  ],
+  "main": "./dist/mercury.js",
+  "bin": {
+    "mercury-parser": "./cli.js",
+    "postlight-parser": "./cli.js"
+  },
+  "scripts": {
+    "lint": "eslint . --fix",
+    "lint:ci": "remark . && eslint .",
+    "lint-fix-quiet": "eslint --fix --quiet",
+    "build": "npm run lint && rollup -c && npm run test:build",
+    "build:ci": "rollup -c && npm run test:build",
+    "build:web": "npm run lint && rollup -c rollup.config.web.js && npm run test:build:web",
+    "build:esm": "npm run lint && rollup -c rollup.config.esm.js && npm run test:build:esm",
+    "build:esm:ci": "rollup -c rollup.config.esm.js && npm run test:build:esm",
+    "build:web:ci": "rollup -c rollup.config.web.js && npm run test:build:web",
+    "release": "npm run build && npm run build:web",
+    "build:generator": "rollup -c scripts/rollup.config.js",
+    "test_build": "rollup -c",
+    "test": "npm run test:node && npm run test:web",
+    "test:node": "jest --json --outputFile test-output.json",
+    "test:web": "node ./node_modules/karma/bin/karma start karma.conf.js --auto-watch",
+    "test:build": "cd ./scripts && jest check-build.test.js",
+    "test:build:web": "node ./scripts/proxy-browser-test.js",
+    "test:build:esm": "node ./scripts/proxy-browser-test.js",
+    "watch:test": "jest --watch",
+    "generate-parser": "node ./dist/generate-custom-parser.js"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
